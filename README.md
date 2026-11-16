@@ -13,4 +13,4 @@ git -C early-history log --oneline
 
 还原后的 bundle SHA-256：`c8744abd5d864be86fd3914fac0c6116f550e8e1fa51628948d486a3fe21a031`。末次提交：`10e5f27c8d444d4b78580cd5e86f165e7470363d`。
 
-历史中的部分三维素材使用 Git LFS 指针；查看提交历史无需下载素材文件。本仓库为公开评审材料，评委可直接下载查看。
+历史包保留原始提交记录，三维素材以 Git LFS 指针记录。
