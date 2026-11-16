@@ -6,11 +6,11 @@
 
 ```text
 python -c "from pathlib import Path; p=Path('.'); (p/'early-history.bundle').write_bytes(b''.join(x.read_bytes() for x in sorted(p.glob('early-history.bundle.part*'))))"
-git bundle verify early-history.bundle
-git clone early-history.bundle early-history
+git clone --no-checkout early-history.bundle early-history
+git -C early-history bundle verify ../early-history.bundle
 git -C early-history log --oneline
 ```
 
 还原后的 bundle SHA-256：`c8744abd5d864be86fd3914fac0c6116f550e8e1fa51628948d486a3fe21a031`。末次提交：`10e5f27c8d444d4b78580cd5e86f165e7470363d`。
 
-本仓库为私有评审材料，账号授权由项目负责人管理。
+历史中的部分三维素材使用 Git LFS 指针；查看提交历史无需下载素材文件。本仓库为私有评审材料，账号授权由项目负责人管理。
